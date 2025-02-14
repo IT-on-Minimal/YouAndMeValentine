@@ -1,0 +1,98 @@
+body {
+  background: #fde2e2;
+}
+
+.valentine-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid #ff4d6d; /* Основной бордер */
+  box-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff66a3, 0 0 20px #ff99cc;
+  animation: glow 1.5s infinite alternate; /* Анимация свечения */
+}
+
+/* Анимация неонового свечения */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff66a3, 0 0 30px #ff99cc;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff99cc, 0 0 30px #ff66a3, 0 0 40px #ff4d6d;
+  }
+}
+
+/* Делаем картинку меньше и добавляем квадратную рамку */
+.photo {
+  margin-top: 15px;
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid #ff4d6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.password-box {
+  text-align: center;
+}
+
+/* Поле ввода */
+.password-box input {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #ff4d6d;
+  border-radius: 15px;
+  outline: none;
+  margin-top: clamp(15px, 5vh, 30px);
+  margin-bottom: 15px;
+}
+
+/* Клавиатура */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.keypad button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.keypad button:hover {
+  background: #d93c5b;
+}
+
+/* Кнопка входа */
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #d93c5b;
+}

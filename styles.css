@@ -1,0 +1,77 @@
+/* Подключаем мягкий шрифт для текста и толстый шрифт для цифр */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka+One&family=Poppins:wght@400;700&display=swap");
+
+/* Основные стили */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fde2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Контейнер центрирования */
+.container {
+  text-align: center;
+}
+
+/* Основной блок */
+.valentine-box {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Заголовки - теперь они аккуратнее */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4d6d;
+  text-transform: uppercase;
+}
+
+/* Цифры - оставляем крупными и округлыми */
+.time-grid span:first-child {
+  font-family: "Fredoka One", cursive;
+  color: #ff69b4;
+  font-size: 32px;
+}
+
+/* Подписи к цифрам - делаем аккуратными */
+.time-label {
+  font-family: "Poppins", sans-serif;
+  color: #d93c5b;
+  font-size: 18px;
+}
+
+/* Кнопки */
+button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 12px 18px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d93c5b;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .valentine-box {
+    width: 95%;
+  }
+}

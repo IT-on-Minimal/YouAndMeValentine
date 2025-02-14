@@ -1,0 +1,151 @@
+body.page2 {
+  background: #fff0f5;
+}
+
+.valentine-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px; /* Фиксируем ширину */
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  border: 5px solid #ff4d6d; /* Основной бордер */
+  box-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff66a3, 0 0 30px #ff99cc;
+  animation: glow 1.5s infinite alternate; /* Анимация свечения */
+}
+
+/* Анимация неонового свечения */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff66a3, 0 0 30px #ff99cc;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff99cc, 0 0 30px #ff66a3, 0 0 40px #ff4d6d;
+  }
+}
+
+/* Стили для заголовка времени (года и месяцы) */
+#timeTogether {
+  font-size: 26px;
+  font-family: "Arial", sans-serif;
+  color: #ff0f5f;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(255, 47, 151, 0.6);
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ff4d6d;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.calculate-btn,
+.memory-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.calculate-btn:hover,
+.memory-btn:hover {
+  background: #d93c5b;
+}
+
+/* Опускаем кнопку "Воспоминания" чуть ниже */
+.memory-btn {
+  margin-top: 20px !important; /* Увеличиваем отступ только у кнопки "Воспоминания" */
+}
+
+/* Скрываем только содержимое time-box, но не его контейнер */
+.time-box {
+  display: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Заголовок времени */
+.time-box h2 {
+  color: #ff4d6d;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Грид для отображения времени */
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Блоки с цифрами */
+.time-grid div {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  background: #fde2e2;
+  padding: 12px;
+  border-radius: 20px;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ff4d6d;
+}
+
+/* Цвет цифр - розовый, утолщенные */
+.time-grid span:first-child {
+  color: #ff69b4;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Цвет подписей - красноватый, утолщенные */
+.time-label {
+  color: #d93c5b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .valentine-box {
+    max-width: 280px;
+  }
+
+  .time-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 280px;
+  }
+
+  .time-grid div {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 15px;
+  }
+
+  .time-grid span:first-child {
+    font-size: 26px;
+  }
+
+  .time-label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Валентинка 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="page1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="valentine-box">
+        <div class="photo">
+          <img src="images/1.jpg" alt="Пара" />
+        </div>
+        <div class="password-box">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="🔒 Введите пароль"
+            readonly
+          />
+          <div class="keypad">
+            <button onclick="pressKey(1)">1</button>
+            <button onclick="pressKey(2)">2</button>
+            <button onclick="pressKey(3)">3</button>
+            <button onclick="pressKey(4)">4</button>
+            <button onclick="pressKey(5)">5</button>
+            <button onclick="pressKey(6)">6</button>
+            <button onclick="pressKey(7)">7</button>
+            <button onclick="pressKey(8)">8</button>
+            <button onclick="pressKey(9)">9</button>
+            <button onclick="pressKey('*')">*</button>
+            <button onclick="pressKey(0)">0</button>
+            <button onclick="pressKey('#')">#</button>
+          </div>
+          <button class="submit-btn" onclick="checkPassword()">🔑 Войти</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script-index.js"></script>
+  </body>
+</html>
